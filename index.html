@@ -25,7 +25,26 @@
     <title>Nam Phan</title>
   </head>
   <body>
-
+    <div id="side-menu">
+      <div class="side-menu-content">
+        <div class="side-menu-header">
+          <div class="brand-container">
+            <a class="navbar-brand brand-default" href="#home">
+              <img class="logo" src="./img/logo.jpg">
+            </a>
+          </div>
+          <a class="btn-close" onclick="closeSlideMenu()"><i class="fas fa-times-circle"></i></a>
+        </div>
+        <div class="side-menu-body">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+          <a href="./Nam_Phan.pdf" target="_blank">Resume</a>
+        </div>
+      </div>
+    </div>
     <div class="wallpaper">
       <div class="image-cover">
       </div>
@@ -33,316 +52,311 @@
       </div>
     </div>
 
-    <section id="home">
-        <div id="my-fixed-nav" class="header-wrapper">
-          <div class="container header-container">
-            <div class="brand-container">
-              <a class="navbar-brand brand-default" href="#">
-                <img class="logo" src="./img/logo.jpg">
-              </a>
-            </div>
-            <nav class="navbar-default">
-
-              <div class="wrapper">
-                <ul class="navbar-right">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#blog">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./Nam_Phan.pdf" target="_blank">Resume</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div>
-        <div class="collpased-nav">
-          <span class="open-menu">
-            <a href="#">
-              <svg width="30" height="30">
-                <path d="M0,5 30,5" stroke="#000" stroke-width=""/>
-                <path d="M0,14 30,14" stroke="#000" stroke-width=""/>
-                <path d="M0,23 30,23" stroke="#000" stroke-width=""/>
-              </svg>
-            </a>
-          </span>
-
-          <ul>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#blog">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./Nam_Phan.pdf" target="_blank">Resume</a>
-            </li>
-          </ul>
-        </div>
-      <div class="wrapper greeting">
-          <h1>Nam Phan</h1>
-          <p>Em yeu Anh </p>
-      </div>
-    </section>
-
-
-
-
-    <section id="about" class="section-wrapper">
-      <div class="container">
-        <div class="section-header">
-          <div class="side-line">
-          </div>
-          <h3>About Me</h3>
-          <div class="side-line">
-          </div>
-        </div>
-        <div class="wrapper row">
-          <div class="col-md-4">
-            <div class="hexagon-avatar">
-            </div>
-          </div>
-          <div class="col-md-2">
-          </div>
-          <div class="col-md-6">
-            <p class="container" style="color:var(--myDark)">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row wrapper">
-            <div class="col-md-6">
-              <div class="about-card">
-                <h4 class="about-card-title">Education</h4>
-                <div class="about-card-body">
-                  <a class="school" href="https://www.cornellcollege.edu/"><h5>Cornell College</h5></a>
-                  <p style="font-size: 10px; color: var(--dark); margin-top: 5px">Mount Vernon, IA | 2013-2017</p>
-                  <ul>
-                    <li>B.A. in Computer Science and Mathematics</li>
-                  </ul>
+    <div id="main">
+      <section id="home">
+          <div id="my-fixed-nav" class="header-wrapper">
+            <div class="toggle-wrapper">
+              <div id="open-menu">
+                <div class="open-btn" onclick="openSlideMenu()">
+                  <svg width="35" height="5" viewBox="0, 0, 100, 100" preserveAspectRatio="none">
+                    <line stroke-linecap="round"
+                    x1="30" y1="70" x2="70" y2="70"
+                    stroke="var(--light)" stroke-width="50">
+                  </svg>
+                  <svg width="35" height="5" viewBox="0, 0, 100, 100" preserveAspectRatio="none">
+                    <line stroke-linecap="round"
+                    x1="30" y1="50" x2="70" y2="50"
+                    stroke="var(--light)" stroke-width="45">
+                  </svg>
+                  <svg width="35" height="5" viewBox="0, 0, 100, 100" preserveAspectRatio="none">
+                    <line stroke-linecap="round"
+                    x1="30" y1="30" x2="70" y2="30"
+                    stroke="var(--light)" stroke-width="50">
+                  </svg>
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="about-card">
-                <h4 class="about-card-title">Hobbies</h4>
-                <div class="about-card-body">
-                  <ul>
-                    <li>Playing Soccer</li>
-                    <li>Cooking</li>
-                    <li>Trading Stocks</li>
-                    <li>Traveling</li>
-                    <li>Reading about History</li>
+
+            <div class="header-container">
+              <nav class="navbar-default">
+                  <ul class="navbar-right">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./Nam_Phan.pdf" target="_blank">Resume</a>
+                    </li>
                   </ul>
+              </nav>
+
+
+              <div class="brand-container">
+                <a class="navbar-brand brand-default" href="#home">
+                  <img class="logo" src="./img/logo.jpg">
+                </a>
+              </div>
+            </div>
+          </div>
+        <div class="wrapper greeting">
+            <h1 id="typedtext-1" class="big-title"></h1>
+            <p id="typedtext-2" class="quick-intro"></p>
+        </div>
+      </section>
+
+
+
+
+      <section id="about" class="section-wrapper">
+        <div class="container">
+          <div class="section-header">
+            <div class="side-line side-line-left">
+            </div>
+            <h3 class="section-title">About Me</h3>
+            <div class="side-line side-line-right">
+            </div>
+          </div>
+          <div class="wrapper row">
+            <div class="col-md-4">
+              <div class="hexagon-avatar">
+              </div>
+            </div>
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-6 self-description">
+              <p class="container" style="color:var(--myDark)">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row wrapper">
+              <div class="col-md-6">
+                <div class="about-card about-card-left">
+                  <h4 class="about-card-title">Education</h4>
+                  <div class="about-card-body">
+                    <a class="school" href="https://www.cornellcollege.edu/"><h5>Cornell College</h5></a>
+                    <p style="font-size: 10px; color: var(--dark); margin-top: 5px">Mount Vernon, IA | 2013-2017</p>
+                    <ul>
+                      <li>B.A. in Computer Science and Mathematics</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="about-card about-card-right">
+                  <h4 class="about-card-title">Hobbies</h4>
+                  <div class="about-card-body">
+                    <ul>
+                      <li>Playing Soccer</li>
+                      <li>Cooking</li>
+                      <li>Trading Stocks</li>
+                      <li>Traveling</li>
+                      <li>Reading about History</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="skills" class="wrapper section-wrapper">
-      <div class="container">
-        <div class="section-header">
-          <div class="side-line">
-          </div>
-          <h3>Skills</h3>
-          <div class="side-line">
-          </div>
-        </div>
-
+      <section id="skills" class="wrapper section-wrapper">
         <div class="container">
-          <div class="skill-card">
-            <div class="row">
-              <div class="col-md-4">
-                <h5>Programming</h5>
-                <ul>
-                  <li>Experienced: Java, Javascrip, C, MongoDB, SQL, RESTful API, HTML/CSS</li>
-                  <li>Familiar: Python, Android</li>
-                </ul>
+          <div class="section-header">
+            <div class="side-line side-line-left">
+            </div>
+            <h3 class="section-title">Skills</h3>
+            <div class="side-line side-line-right">
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="skill-card">
+              <div class="row">
+                <div class="col-md-4">
+                  <h5>Programming</h5>
+                  <ul>
+                    <li>Experienced: Java, Javascrip, C, MongoDB, SQL, RESTful API, HTML/CSS</li>
+                    <li>Familiar: Python, Android</li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <h5>Libraries/Frameworks</h5>
+                  <ul>
+                    <li>Node.js, Express, React, Redux, Bootstrap</li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <h5>Additional Softwares/Tools</h5>
+                  <ul>
+                    <li>Networking: HTTP, TCP/UDP, FTP</li>
+                    <li>Version Control System: Git</li>
+                    <li>OS: Windows, Linux</li>
+                    <li>CMS: Wordpress</li>
+                    <li>Statistics: Minitab, Tableau, R</li>
+                  </ul>
+                </div>
               </div>
-              <div class="col-md-4">
-                <h5>Libraries/Frameworks</h5>
-                <ul>
-                  <li>Node.js, Express, React, Redux, Bootstrap</li>
-                </ul>
-              </div>
-              <div class="col-md-4">
-                <h5>Additional Softwares/Tools</h5>
-                <ul>
-                  <li>Networking: HTTP, TCP/UDP, FTP</li>
-                  <li>Version Control System: Git</li>
-                  <li>OS: Windows, Linux</li>
-                  <li>CMS: Wordpress</li>
-                  <li>Statistics: Minitab, Tableau, R</li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="portfolio" class="section-wrapper">
-      <div class="container">
-        <div class="section-header">
-          <div class="side-line">
-          </div>
-          <h3>Projects</h3>
-          <div class="side-line">
-          </div>
-        </div>
-
-        <div class="wrapper container portfolio-cards">
-          <div class="project-card">
-            <div class="image-holder">
-              <img src="https://source.unsplash.com/random/500x500" class="image">
-              <a href="https://github.com/namphan17/LocaPic" class="source">
-                <i class="fab fa-github-square fa-lg"></i><span>github</span>
-              </a>
-            </div>
-            <div class="project-description">
-
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="image-holder">
-              <img src="https://source.unsplash.com/random/500x501" class="image">
-              <a href="https://github.com/namphan17/Moonlight-Cafe" class="source">
-                <i class="fab fa-github-square fa-lg"></i><span>github</span>
-              </a>
-            </div>
-            <div class="project-description">
-
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="image-holder">
-              <img src="https://source.unsplash.com/random/500x502" class="image">
-              <a href="https://github.com/namphan17/MinimumSpanningTree-Application" class="source">
-                <i class="fab fa-github-square fa-lg"></i><span>github</span>
-              </a>
-            </div>
-            <div class="project-description">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="blog" class="section-wrapper">
-      <div class="container">
-        <div class="section-header">
-          <div class="side-line">
-          </div>
-          <h3>Blogs</h3>
-          <div class="side-line">
-        </div>
-       </div>
-      <!-- Calendar  -->
-      <div class="container blog-wrapper">
-        <div class="blog-well">
-          <p>Still Working On It...</p>
-        </div>
-      </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section-wrapper">
-      <svg class="triangle-down" viewBox="0, 0, 100, 100" preserveAspectRatio="none">
-        <polygon points="0,0 50,100 100,0" style="fill:var(--myGray);stroke:transparent;stroke-width:1"/>
-      </svg>
-      <div class="container">
-        <div class="section-header">
-          <div class="side-line">
-          </div>
-          <h3>Thanks!</h3>
-          <div class="side-line">
-          </div>
-        </div>
-      <p>Want to work together or just chat about something?</p>
-
-      <!-- <div class="form-wrapper">
+      <section id="portfolio" class="section-wrapper">
         <div class="container">
-          <div class="form-container">
-            <form>
-              <p>
-                <label>name</label>
-                <input type="text" name="Name" placeholder="Name">
-              </p>
-              <p>
-                <label>Email</label>
-                <input name="email" placeholder="Enter Email">
-              </p>
-              <p>
-                <label>Message</label>
-                <textarea type="text" rows="5" name="message" placeholder="Your Message"></textarea>
-              </p>
-              <button type="button" name="button">Submit</button>
-            </form>
+          <div class="section-header">
+            <div class="side-line side-line-left">
+            </div>
+            <h3 class="section-title">Projects</h3>
+            <div class="side-line side-line-right">
+            </div>
+          </div>
+
+          <div class="wrapper container portfolio-cards">
+            <div class="project-card one">
+              <div class="image-holder">
+                <img src="https://source.unsplash.com/random/500x500" class="image">
+                <a href="https://github.com/namphan17/LocaPic" class="source">
+                  <i class="fab fa-github-square fa-lg"></i><span>github</span>
+                </a>
+              </div>
+              <div class="project-description">
+
+              </div>
+            </div>
+            <div class="project-card two">
+              <div class="image-holder">
+                <img src="https://source.unsplash.com/random/500x501" class="image">
+                <a href="https://github.com/namphan17/Moonlight-Cafe" class="source">
+                  <i class="fab fa-github-square fa-lg"></i><span>github</span>
+                </a>
+              </div>
+              <div class="project-description">
+
+              </div>
+            </div>
+            <div class="project-card three">
+              <div class="image-holder">
+                <img src="https://source.unsplash.com/random/500x502" class="image">
+                <a href="https://github.com/namphan17/MinimumSpanningTree-Application" class="source">
+                  <i class="fab fa-github-square fa-lg"></i><span>github</span>
+                </a>
+              </div>
+              <div class="project-description">
+              </div>
+            </div>
           </div>
         </div>
-      </div> -->
+      </section>
 
-      <div class="collapsed-form form-wrapper">
+      <section id="blog" class="section-wrapper">
         <div class="container">
-          <div class="form-container">
-            <form>
-              <div class="form-group">
-                  <label for="inputFirstName">Name</label>
-                  <input type="text" class="form-control" id="inputFirstName" placeholder="Name">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlTextarea">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea" rows="4" placeholder="Your Message"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btn-default">Submit</button>
-            </form>
+          <div class="section-header">
+            <div class="side-line side-line-left">
+            </div>
+            <h3 class="section-title">Blogs</h3>
+            <div class="side-line side-line-right">
+          </div>
+         </div>
+        <!-- Calendar  -->
+        <div class="container blog-wrapper">
+          <div class="blog-well">
+            <p>Still Working On It...</p>
           </div>
         </div>
-      </div>
-    </section>
-
-
-
-    <footer>
-      <div class="container footer-wrapper">
-        <div class="social-media">
-          <a href="https://github.com/namphan17" target="_blank"><i class="fab fa-github fa-lg"></i></a>
-          <a href="https://www.linkedin.com/in/nam-phan-4890137b/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
-          <a href="#contact"><i class="fas fa-envelope fa-lg"></i></a>
         </div>
-        <p>Nam Phan <span style="color:var(--myTheme)">&copy; 2018</span></p>
-      </div>
-    </footer>
+      </section>
+
+      <section id="contact" class="section-wrapper">
+        <svg class="triangle-down" viewBox="0, 0, 100, 100" preserveAspectRatio="none">
+          <polygon points="0,0 50,100 100,0" style="fill:var(--myGray);stroke:transparent;stroke-width:1"/>
+        </svg>
+        <div class="container">
+          <div class="section-header">
+            <div class="side-line side-line-left">
+            </div>
+            <h3 class="section-title">Thanks!</h3>
+            <div class="side-line side-line-right">
+            </div>
+          </div>
+          <p class="contact-msg">Want to work together or just chat about something?</p>
+        </div>
+        <!-- <div class="form-wrapper">
+          <div class="container">
+            <div class="form-container">
+              <form>
+                <p>
+                  <label>name</label>
+                  <input type="text" name="Name" placeholder="Name">
+                </p>
+                <p>
+                  <label>Email</label>
+                  <input name="email" placeholder="Enter Email">
+                </p>
+                <p>
+                  <label>Message</label>
+                  <textarea type="text" rows="5" name="message" placeholder="Your Message"></textarea>
+                </p>
+                <button type="button" name="button">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="collapsed-form form-wrapper">
+          <div class="container">
+            <div class="form-container">
+              <form>
+                <div class="form-group form-right">
+                    <label for="inputFirstName">Name</label>
+                    <input type="text" class="form-control" id="inputFirstName" placeholder="Name">
+                </div>
+                <div class="form-group form-left">
+                  <label for="exampleInputEmail">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group form-right">
+                  <label for="exampleFormControlTextarea">Message</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <div class="form-left">
+                  <button type="submit" class="btn btn-primary btn-default">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <footer>
+        <div class="container footer-wrapper">
+          <div class="social-media">
+            <a href="https://github.com/namphan17" class="one" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+            <a href="https://www.linkedin.com/in/nam-phan-4890137b/" class="two" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+            <a href="#contact" class="three"><i class="fas fa-envelope fa-lg"></i></a>
+          </div>
+          <div class="signature">
+            <p>Nam Phan <span style="color:var(--myTheme)">&copy; 2018</span></p>
+          </div>
+        </div>
+      </footer>
+    </div>
 
     <!-- Bootstrap scripts -->
     <script
@@ -354,26 +368,6 @@
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
     <!-- Custom Script -->
-    <script>
-    // $(document).scroll(function(){
-    //  $('#my-fixed-nav').toggleClass('scrolled', $(this).scrollTop() > 700);
-    // });
-    $(document).ready(function() {
-      $('a[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 500);
-            return false;
-          }
-        }
-      });
-      let screenHeight = $(window).height();
-      console.log(screenHeight);
-    });
-  </script>
+    <script src="./script.js"></script>
   </body>
 </html>
