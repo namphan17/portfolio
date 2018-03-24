@@ -195,7 +195,8 @@ $(document).ready(function() {
     });
     sr.reveal('.signature', {
       origin: 'left',
-      duration: 1000
+      duration: 1000,
+      delay: 1000
     });
 
 

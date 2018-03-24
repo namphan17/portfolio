@@ -71,6 +71,7 @@ img {
 /* Header */
 #my-fixed-nav {
   position: fixed;
+  z-index: 10;
 }
 
 .header-wrapper {
@@ -315,14 +316,28 @@ img {
 }
 
 .greeting {
-  position:absolute;
   text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 100vh !important;
 }
 .big-title, .quick-intro {
   transition: 0.5s ease-in-out;
+}
+
+#typedtext-1 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+#typedtext-2 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
 }
 
 
@@ -666,7 +681,7 @@ footer i {
 @media (max-width: 800px) {
 
   .big-title {
-    font-size: 3rem;
+    font-size: 3.5rem !important;
   }
   .quick-intro {
     font-size: 0.8rem;
