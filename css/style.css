@@ -14,6 +14,7 @@
   --textTestGradient: -webkit-linear-gradient(45deg, rgba(0, 26, 112, 0.7) 25%, rgba(229, 96, 96, 0.2) 50%, rgba(141, 213, 252, 0.2));
 }
 
+
 html {
   max-width: 100%;
   overflow-x: hidden;
@@ -24,10 +25,11 @@ html {
 body {
   max-width: 100%;
   overflow-x: hidden;
-  background: var(--primary);
+  background: var(--myContactGradient);
   line-height: 1.6;
+  display: none;
+  animation: 0.5s ease-in;
 }
-
 
 
 h1,h2,h3,h4,h5,h6 {
