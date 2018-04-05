@@ -1,8 +1,8 @@
 
   // Side Menu
   function openSlideMenu() {
-    document.querySelector('#side-menu').style.width = '250px';
-    document.querySelector('#main').style.marginLeft = '250px';
+    document.querySelector('#side-menu').style.width = '200px';
+    document.querySelector('#main').style.marginLeft = '200px';
     document.querySelector('#open-menu').style.visibility = 'hidden';
   }
   function closeSlideMenu() {
